@@ -76,23 +76,34 @@
      
     }
     #offers{
-        margin: 10px;
+        display:inline-block;
         padding: 5%;
-        border: 2px solid white;
-        border-radius: 50px;
-        display: inline-block;
-        width: 40%;
+        /* border: 1px solid white;
+        border-radius: 50px; */
+        width: 35%;
         height: 50%;
+        vertical-align: top; /* Align them at the top if needed */
         font-size: larger;
+        color: white;
+        font-size: larger;
+        text-align: center;
     }
     #info{
-        display: inline-block;
-            width: 200px;
+            display: inline-block;
+            width:20%;
             height: 200px;
-            background-color: lightblue;
-            margin: 10px;
             vertical-align: top; /* Align them at the top if needed */
+            border: 1px solid white;
+        border-radius: 50px;
+        padding: 1%;
+        margin-top:2%;
+        margin-right: 1%;
+        margin-left: 3%;
+        text-align: center;
     }
+    /* div.main-page-blocks{
+        padding: %;
+    } */
 </style>
 <body>
     <!--
@@ -109,7 +120,7 @@
     <li><a href="cart.html">Cart<img src="images/cart1.png" alt="Cart" height="7%" width="7%" style="padding-left:2%;padding-bottom:0%;"></a></li><!--move to the profile -->
 </ul>
 <br><br>
-<div id="login_box">
+<div id="login_box" class="main-page-blocks">
 <form action="login_action.php">
     <h2 style="color: white; text-align: center;" ><em>Login to Elicty<em></h2>
     <label for="email" style="color: white;">Enter email:</label>
@@ -121,11 +132,11 @@
 </form>
 <br>    
 </div>
-<div id="offers">
-  <p style="color:white ;">Check out our offers for today! </p>
+<div id="offers" class="main-page-blocks">
+  Check out our offers for today! 
 </div>
-<div id="info">
-    <p style="color:white ;">Check out our offers for today! </p>
+<div id="info" class="main-page-blocks">
+    <p style="color:white ;">Elicty is a online store specilazes in all technechal devices!</p>
   </div>
 </body>
 </html>
