@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elicty Store main page</title>
+<title>Elicty Store contact page</title>
+<link rel="stylesheet" href="styles/styles2.css">
 </head>
-<style>
+<!-- <style>
     /* Styling the navigation menu */
     body {
             background-image: url('images/background2.png'); /* URL of the image */
@@ -52,22 +53,67 @@
         margin-right: 0;
         padding-right: 0;
     }
-</style>
+</style> -->
 <body>
     <!--
 <div>
     <img src="imges/welcome.png" alt="Welcome pic" style="width:100%;height:100%;">
 <div>
 -->
-<ul>
+<ul id="main_menu" class="main_menu">
     <li><a href="mainpage.html">Home</a></li><!--move to the home page -->
-    <li><a href="#home">Products</a></li><!--drop down list has all the avaliable products -->
+    <li>
+        <a class="dropdown-button" id="Productbutton" onclick="ProductDropdown(event)">Products</a>
+        <div id="Products-dropdown-content" class="dropdown-content">
+            <a href="products/mobiles.html">Mobiles</a>
+            <a href="products/laptops.html">Laptops</a>
+            <a href="products/accessories.html">Accessories</a>
+            <a href="products/watches.html">Watches</a>
+            <a href="products/offers.html">Offers</a>
+            <a href="products/others.html">Others</a>
+        </div>
+    </li>
     <li><a href="about.html">About</a></li><!--move to the about page -->
-    <li><a href="#services">Services</a></li><!--drop down list has all the avaliable services -->
+    <li><label id="current-page" class="current-page">Content</label></li>
+    <li>
+        <a class="dropdown-button" id="Servicebutton"  onclick="ServiceDropdown(event)">Services</a>
+        <div id="Services-dropdown-content" class="dropdown-content">
+            <a href="services/watches.html">Watches Maintenance</a>
+            <a href="services/mobiles.html">Mobile Maintenance</a>
+            <a href="services/others.html">Others</a>
+        </div>
+    </li>
     <li><a href="profile.html">Profile<img src="images/profile2.png" alt="Profile" height="7%" width="7%" style="padding-left:2%;padding-bottom:0%"></a></li><!--move to the profile -->
     <li><a href="cart.html">Cart<img src="images/cart1.png" alt="Cart" height="7%" width="7%" style="padding-left:2%;padding-bottom:0%;"></a></li><!--move to the profile -->
 </ul>
 </div>
 </div>
+
+<script>
+    function ProductDropdown(event) {
+         event.stopPropagation(); // Prevents the dropdown from being hidden immediately
+         document.getElementById("Products-dropdown-content").classList.toggle("show");
+     }
+ 
+     // Optional: Code to close the dropdown if clicking outside
+     document.addEventListener('click', function(event) {
+         const dropdown = document.getElementById("Products-dropdown-content");
+         if (!event.target.matches('.dropdown-button') && dropdown.classList.contains('show')) {
+             dropdown.classList.remove('show');
+         }
+     });
+     function ServiceDropdown(event) {
+         event.stopPropagation(); // Prevents the dropdown from being hidden immediately
+         document.getElementById("Services-dropdown-content").classList.toggle("show");
+     }
+ 
+     // Optional: Code to close the dropdown if clicking outside
+     document.addEventListener('click', function(event) {
+         const dropdown = document.getElementById("Services-dropdown-content");
+         if (!event.target.matches('.dropdown-button') && dropdown.classList.contains('show')) {
+             dropdown.classList.remove('show');
+         }
+     });
+ </script>
 </body>
 </html>

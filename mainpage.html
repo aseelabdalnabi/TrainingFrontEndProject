@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
 <title>Elicty Store main page</title>
 </head>
-<style>
+<!-- <style>
     /* Styling the navigation menu */
     body {
         background-image: url('images/Welcome.png'); /* URL of the image */
@@ -118,9 +119,14 @@
     .show {
         display: block;
     }
-</style>
+    a[href="products/offers.html"]{
+        color:white;
+        font-size: larger;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style> -->
 <body>
-<ul>
+<ul id="main_menu" class="main_menu">
     <li>
         <a class="dropdown-button" id="Productbutton" onclick="ProductDropdown(event)">Products</a>
         <div id="Products-dropdown-content" class="dropdown-content">
@@ -128,6 +134,7 @@
             <a href="products/laptops.html">Laptops</a>
             <a href="products/accessories.html">Accessories</a>
             <a href="products/watches.html">Watches</a>
+            <a href="products/offers.html">Offers</a>
             <a href="products/others.html">Others</a>
         </div>
     </li>
@@ -158,7 +165,7 @@
     </form>
 </div>
 
-<div id="offers_box">Check out our offers for today!</div>
+<div id="offers_box"><a id="offres_homepage" href="products/offers.html">Check out our offers for today!</a></div>
 <div id="info_box">Elicty is an online store specializing in all technical devices!</div>
 
 <script>
