@@ -78,7 +78,7 @@ li a:hover {
     border-radius: 25%;
     display: flex;
 }
-.products-main-menu{
+.main-menu {
     border: 1px solid #ffffff;
     border-radius: 20px;
     flex: 1 1 300px;
@@ -86,7 +86,7 @@ li a:hover {
     margin-left: 1%;
     margin-top:1%;
 }
-.products-side-menu{
+.side-menu {
     order:1;
     /* border: 1px solid white;
     border-radius: 10%; */
@@ -102,7 +102,8 @@ li a:hover {
     /* margin-top: 2.5%; */
     color: #f9f9f9;
 }
-.container> .products-side-menu> a{
+
+.container> .side-menu> a{
     color: #ffffff;
     padding: 10px;
     padding-top:15px;
@@ -119,13 +120,14 @@ li a:hover {
     color: black;
 
 }
-.container> .products-side-menu> a:hover {
+.container> .side-menu> a:hover{
     background-color: rgb(16, 104, 92);
     border-radius: 20px;
     text-align: center;
     font-size:  larger;
-    
 }
+
+
 /* .main_menu{
     position: sticky;
     top:10px;
