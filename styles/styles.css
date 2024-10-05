@@ -33,6 +33,7 @@ li a,li label {
     text-decoration: none;
     font-size: x-large;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 li a:hover {
