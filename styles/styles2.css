@@ -128,7 +128,34 @@ li a:hover {
 }
 
 
-/* .main_menu{
-    position: sticky;
-    top:10px;
-} */
+ .main-products{
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    flex: 1 1 300px;
+    margin: 10px;
+    margin-left: 1%;
+    margin-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:1%;
+
+    
+}  
+ .items > img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+} 
+.items>p{
+    margin-top:5%;
+    text-decoration:none;
+    color:white;
+    cursor: pointer;
+}
+.items>button{
+    margin-top:0%;
+    margin-left:37%;
+    cursor: pointer;
+}
